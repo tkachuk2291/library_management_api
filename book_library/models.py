@@ -2,8 +2,6 @@ from django.contrib.auth.models import User
 from django.db import models
 
 
-# from user_account.models import User
-
 class Book(models.Model):
     title = models.CharField(max_length=100 , null=False  , blank=False)
     author = models.CharField(max_length=100 , null=False , blank=False)
