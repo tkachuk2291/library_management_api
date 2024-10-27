@@ -16,7 +16,25 @@ class BookViewSet(viewsets.ModelViewSet):
             return BookCreateSerializer
         return BookSerializer
 
-    def perform_create(self, serializer):
-        user = self.request.user
-        serializer.save(user=user)
+
+    def get_queryset(self):
+        queryset = Book.objects.all()
+        author = self.request.query_params.get("author")
+        published_date = self.request.query_params.get("published_date")
+        language = self.request.query_params.get("language")
+
+
+        if author:
+            queryset = queryset.filter(
+                author__icontains=author
+            )
+        if published_date:
+            queryset = queryset.filter(
+                published_date__icontains=published_date
+            )
+        if language:
+            queryset = queryset.filter(
+                language__icontains=language
+            )
+        return queryset.distinct()
 

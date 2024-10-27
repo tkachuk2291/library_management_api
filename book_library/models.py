@@ -10,7 +10,6 @@ class Book(models.Model):
     pages = models.IntegerField(null=False , blank=False)
     cover = models.URLField(null=True)
     language = models.CharField(max_length=100 , null=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="books")
 
     def __str__(self):
         return f"{self.title} by {self.author}"
