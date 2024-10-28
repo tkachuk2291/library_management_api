@@ -39,7 +39,7 @@ DB_PORT=5432
 ```
 
 
-### Migrations & Server
+### Migrations & Server & Test
 
 ```shell
    python manage.py makemigrations
@@ -52,6 +52,12 @@ DB_PORT=5432
 ```shell
    python manage.py runserver 8001
 ```
+
+```shell
+   python manage.py test
+```
+
+
 
 **Here is basic link for endpoints**
 http://127.0.0.1:8001/
