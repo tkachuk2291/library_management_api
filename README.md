@@ -75,9 +75,9 @@ http://127.0.0.1:8001/
 
 ***Please change name_example , date_example or language_example for valid data***
 
-***http://127.0.0.1:8001/books/?author=name_eaxample***
-***http://127.0.0.1:8001/books/?published_date=date_example***
-***http://127.0.0.1:8001/books/?language=language_example***
+***http://127.0.0.1:8001/books/?author=name_eaxample***  
+***http://127.0.0.1:8001/books/?published_date=date_example***  
+***http://127.0.0.1:8001/books/?language=language_example***  
 
 
 
