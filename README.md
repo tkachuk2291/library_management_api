@@ -68,11 +68,23 @@ http://127.0.0.1:8001/
 ***"books-list" METHODS (GET, POST): http://127.0.0.1:8001/books/***
 ***"book-detail" METHODS (GET, PUT, PATCH, DELETE): http://127.0.0.1:8001/books/id/
 (please changed id for id object 1, 2, 3 ....)***
+***for filtering please use http://127.0.0.1:8001/books/?filter***
+
+***Available filters, all filters support icontains so you can write part of data.***
+
+
+***Please change name_example , date_example or language_example for valid data***
+
+***http://127.0.0.1:8001/books/?author=name_eaxample***
+***http://127.0.0.1:8001/books/?published_date=date_example***
+***http://127.0.0.1:8001/books/?language=language_example***
+
+
 
 
 ***Please Note***  
 
-***You can use the Django interface to try endpins more conveniently. To do this, simply follow the links in Readme.
+***You can use the Django interface to try endpoints more conveniently. To do this, simply follow the links in Readme.
 Also, ask questions in case of any failure, I will be happy to help***  
 
 ***I also did not add authorization and authentication to avoid the complexity of launching the project; 
