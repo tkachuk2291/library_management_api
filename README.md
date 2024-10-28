@@ -5,7 +5,7 @@
 git clone https://github.com/tkachuk2291/library_management_api
 ``` 
 ```shell
-cd library_managment_api
+cd library_management_api
 ```
 ```shell
 python3 -m venv venv  
